@@ -1,0 +1,41 @@
+feature,mean_accuracy,std_accuracy,n_runs
+Common Variable Immunodeficiency (CVID),1.0,0.0,3
+EGGIM Score,1.0,0.0,3
+Lymph Node Metastasis Risk,1.0,0.0,3
+Life Expectancy,1.0,0.0,3
+Horizontal Margin Status,1.0,0.0,3
+Gastric MALT Lymphoma,1.0,0.0,3
+En bloc Resection Margins,1.0,0.0,3
+En bloc Resection,1.0,0.0,3
+Submucosal Invasion Depth,1.0,0.0,3
+Piecemeal Resection,1.0,0.0,3
+Resection Curability,1.0,0.0,3
+Submucosal Invasion,1.0,0.0,3
+OLGA Stage,1.0,0.0,3
+OLGIM Stage,1.0,0.0,3
+Kimura Takemoto Classification,1.0,0.0,3
+Vertical Margin Status,1.0,0.0,3
+Pepsinogen I Level,1.0,0.0,3
+MALT Lymphoma Precancerous Conditions,1.0,0.0,3
+Pepsinogen I II Ratio,1.0,0.0,3
+Lesion Paris Classification,0.9583333333333334,0.07216878364870322,3
+Lymphovascular Invasion,0.9583333333333334,0.07216878364870322,3
+Low Serum Pepsinogen,0.9583333333333334,0.07216878364870322,3
+Autoimmune Gastritis,0.9166666666666666,0.14433756729740646,3
+Indefinite for Dysplasia,0.875,0.0,3
+Lesion Size,0.875,0.125,3
+Family History,0.7916666666666666,0.19094065395649332,3
+Differentiation Status,0.75,0.125,3
+Dysplasia Grade,0.75,0.125,3
+Hereditary Syndrome,0.75,0.125,3
+Neoplastic Lesion Visibility,0.7083333333333334,0.19094065395649332,3
+Dysplasia Visibility,0.625,0.125,3
+Smoking Status,0.625,0.21650635094610965,3
+Treatment Approach,0.5833333333333334,0.07216878364870322,3
+Lesion Ulceration,0.5416666666666666,0.07216878364870323,3
+Dysplasia,0.4583333333333333,0.19094065395649334,3
+Neoplastic Lesion,0.4166666666666667,0.07216878364870323,3
+Helicobacter pylori Status,0.4166666666666667,0.07216878364870323,3
+Incomplete Intestinal Metaplasia,0.3333333333333333,0.07216878364870322,3
+Atrophic Gastritis,0.2916666666666667,0.14433756729740646,3
+Patient Age,0.20833333333333334,0.07216878364870322,3

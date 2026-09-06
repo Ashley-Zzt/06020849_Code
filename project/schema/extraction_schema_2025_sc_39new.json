@@ -1,0 +1,365 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "EU Guidelines 2025 - Gastric Cancer Surveillance Extraction Schema",
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+        "kimura_takemoto_classification",
+        "eggim_score",
+        "olga_stage",
+        "olgim_stage",
+        "helicobacter_pylori_status",
+        "atrophic_gastritis",
+        "incomplete_intestinal_metaplasia",
+        "family_history",
+        "dysplasia",
+        "dysplasia_grade",
+        "dysplasia_visibility",
+        "indefinite_for_dysplasia",
+        "neoplastic_lesion_visibility",
+        "neoplastic_lesion",
+        "lesion_paris_classification",
+        "neoplastic_lesion_size",
+        "neoplastic_lesion_ulceration",
+        "differentiation_status",
+	"pt_category",
+        "submucosal_invasion",
+        "submucosal_invasion_depth",
+        "lymphovascular_invasion",
+        "lymph_node_metastasis_risk",
+        "recommended_treatment",
+        "en_bloc_resection",
+        "piecemeal_resection",
+        "en_bloc_resection_margins",
+        "horizontal_margin_status",
+        "vertical_margin_status",
+        "resection_curability",
+        "autoimmune_gastritis",
+        "common_variable_immunodeficiency",
+	"gastric_malt_lymphoma",
+        "hereditary_syndrome",
+        "pepsinogen_i_level",
+        "pepsinogen_ii_level",
+        "patient_age",
+        "life_expectancy",
+        "smoking_status"
+    ],
+    "properties": {
+        "kimura_takemoto_classification": {
+            "type": "string",
+            "enum": [
+                "o3",
+                "o2",
+                "o1",
+                "c3",
+                "c2",
+                "c1",
+                "c0",
+                "not_mentioned"
+            ],
+            "description": "endoscopy for gastric atrophy"
+        },
+        "eggim_score": {
+            "type": "string",
+            "description": "endoscopy for gastric intestinal metaplasia",
+            "pattern": "^(not_mentioned|10|[0-9])$"
+        },
+        "olga_stage": {
+            "type": "string",
+            "enum": [
+                "0",
+                "i",
+                "ii",
+                "iii",
+                "iv",
+                "not_mentioned"
+            ]
+        },
+        "olgim_stage": {
+            "type": "string",
+            "enum": [
+                "0",
+                "i",
+                "ii",
+                "iii",
+                "iv",
+                "not_mentioned"
+            ]
+        },
+        "helicobacter_pylori_status": {
+            "type": "string",
+            "enum": [
+                "positive",
+                "negative",
+                "persistent",
+                "not_mentioned"
+            ]
+        },
+        "atrophic_gastritis": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "incomplete_intestinal_metaplasia": {
+            "type": "string",
+            "description": "pathology classification",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "family_history": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "dysplasia": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "highly_likely",
+                "not_mentioned"
+            ]
+        },
+        "dysplasia_grade": {
+            "type": "string",
+            "enum": [
+                "high_grade",
+                "low_grade",
+                "not_mentioned"
+            ]
+        },
+        "dysplasia_visibility": {
+            "type": "string",
+            "enum": [
+                "visible",
+                "nonvisible",
+                "not_mentioned"
+            ]
+        },
+        "indefinite_for_dysplasia": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "neoplastic_lesion_visibility": {
+            "type": "string",
+            "enum": [
+                "visible",
+                "nonvisible",
+                "not_mentioned"
+            ]
+        },
+        "neoplastic_lesion": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "highly_likely",
+                "not_mentioned"
+            ]
+        },
+        "lesion_paris_classification": {
+            "type": "string",
+            "enum": [
+                "0_iia",
+                "other",
+                "not_mentioned"
+            ]
+        },
+        "neoplastic_lesion_size": {
+            "type": "string",
+            "pattern": "^(not_mentioned|(?:\\d+(?:\\.\\d+)?|\\.\\d+)\\s*mm)$"
+        },
+        "neoplastic_lesion_ulceration": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "differentiation_status": {
+            "type": "string",
+            "enum": [
+                "differentiated",
+                "undifferentiated",
+                "not_mentioned"
+            ]
+        },
+	"pt_category": {
+  	  "type": "string",
+  	  "enum": [
+    	      "pt1a", 
+    	      "pt1b",
+	      "other",
+              "not_mentioned"
+	    ]
+ 	},
+        "submucosal_invasion": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "submucosal_invasion_depth": {
+            "type": "string",
+            "enum": [
+                "le_500um",
+                "gt_500um",
+                "not_mentioned"
+            ]
+        },
+        "lymphovascular_invasion": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "lymph_node_metastasis_risk": {
+            "type": "string",
+            "enum": [
+                "lt_0.5_percent",
+                "0.5_to_1_percent",
+                "lt_3_percent",
+                "ge_3_percent",
+                "not_mentioned"
+            ]
+        },
+        "recommended_treatment": {
+            "type": "string",
+            "enum": [
+                "surgical_treatment",
+                "conservative_management",
+                "endoscopic_resection",
+                "endoscopic_submucosal_dissection",
+                "endoscopic_mucosal_resection",
+                "not_mentioned"
+            ]
+        },
+        "en_bloc_resection": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "piecemeal_resection": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "en_bloc_resection_margins": {
+            "type": "string",
+            "enum": [
+                "r0",
+                "rx",
+                "r1",
+                "not_mentioned"
+            ]
+        },
+        "horizontal_margin_status": {
+            "type": "string",
+            "enum": [
+                "positive",
+                "negative",
+                "not_mentioned"
+            ]
+        },
+        "vertical_margin_status": {
+            "type": "string",
+            "enum": [
+                "positive",
+                "negative",
+                "not_mentioned"
+            ]
+        },
+        "resection_curability": {
+            "type": "string",
+            "enum": [
+                "curative",
+                "noncurative",
+                "not_mentioned"
+            ]
+        },
+        "autoimmune_gastritis": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "common_variable_immunodeficiency": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "gastric_malt_lymphoma": {
+            "type": "string",
+            "enum": [
+                "active",
+                "in_remission",
+                "not_mentioned"
+            ]
+        },
+        "hereditary_syndrome": {
+            "type": "string",
+            "enum": [
+                "yes",
+                "no",
+                "not_mentioned"
+            ]
+        },
+        "pepsinogen_i_level": {
+            "type": "string",
+            "pattern": "^(not_mentioned|\\d+(?:\\.\\d+)?\\s*ng/ml)$"
+        },
+        "pepsinogen_ii_level": {
+            "type": "string",
+            "pattern": "^(not_mentioned|\\d+(?:\\.\\d+)?\\s*ng/ml)$"
+        },
+        "patient_age": {
+            "type": "string",
+            "pattern": "^(not_mentioned|\\d+)$"
+        },
+        "life_expectancy": {
+            "type": "string",
+            "enum": [
+                "lt_10_years",
+                "ge_10_years",
+                "not_mentioned"
+            ]
+        },
+        "smoking_status": {
+            "type": "string",
+            "enum": [
+                "smoker",
+                "non_smoker",
+                "not_mentioned"
+            ]
+        }
+    }
+}
