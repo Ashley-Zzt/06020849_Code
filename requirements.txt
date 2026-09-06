@@ -1,0 +1,12 @@
+# fine-tuning model
+numpy==1.24.3
+scipy==1.10.1 scikit-learn matplotlib
+transformers==4.44.2
+jsonformer jsonschema pdfminer.six python-docx
+bitsandbytes triton
+
+# pipeline for patient classification
+transformers==4.44.2 
+huggingface_hub==0.36.2 
+peft==0.19.1 
+accelerate==1.13.0 
