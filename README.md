@@ -23,8 +23,10 @@ All training and evaluation were performed on a **synthetically generated corpus
 │
 ├── data/                             # V5 dataset
 │   ├── raw_reports/                  # 200 patients（.txt）
-│   └──  ground_truth/                 # json features with values
-│   
+│   └── ground_truth/                 # json features with values
+│ 
+├── patient_report_generator_code/ 
+│   └── apiprompt2.ipynb
 │
 ├── schema/                           
 │   └── extraction_schema_2025_sc_39new.json        
@@ -37,6 +39,7 @@ All training and evaluation were performed on a **synthetically generated corpus
 │
 ├── decision_tree_mapping/                           
 │   └── mapping.py
+│
 ├──notebooks/                        # Core code
 │   ├── 01_finetune_qwen_extraction.ipynb       # Model fine-tuning, clinical field extraction, and accuracy evaluation
 │   └── 02_integrate.ipynb   # Integrate the pipeline and generate the final recommendation report
