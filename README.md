@@ -6,7 +6,7 @@ This repository contains the code, synthetic v5 dataset, fine-tuned model, evalu
 This project presents an AI pipeline for automated gastric cancer risk stratification following the **MAPS III (2025)** clinical guideline. The system:
 
 - Extracts **39 structured clinical features** from free‑text endoscopy and pathology reports using a **fine‑tuned Qwen2.5‑1.5B** large language model (with QLoRA).
-- Maps extracted features to guideline‑based surveillance and treatment recommendations via a **deterministic decision tree**.
+- Maps extracted features to guideline‑based management recommendations via a **deterministic decision tree**.
 - Provides **traceable outputs** with explicit MAPS III reference numbers (e.g., REC.31) and warnings.
 
 All training and evaluation were performed on a **synthetically generated corpus (V5)** that adheres to MAPS III reporting standards. The pipeline is **open‑source** and designed for local, privacy‑preserving deployment.
