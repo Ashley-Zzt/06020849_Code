@@ -22,8 +22,7 @@ All training and evaluation were performed on a **synthetically generated corpus
 ├── .gitignore                        
 │
 ├── data/                             # V5 dataset
-│   ├── raw_reports/                  # 200 patients（.txt）
-│   └── ground_truth/                 # json features with values
+│   └── raw_reports&ground_truth.zip                #  200 patients（.txt）and json features with values
 │ 
 ├── patient_report_generator_code/ 
 │   └── apiprompt2.ipynb
