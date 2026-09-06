@@ -34,7 +34,7 @@ All training and evaluation were performed on a **synthetically generated corpus
 │   └── qwen_output_alias_map4_1.json
 │
 ├── models/                           
-│   └── lora_adapter
+│   └── lora_adapter.zip
 │
 ├── decision_tree_mapping/                           
 │   └── mapping.py
