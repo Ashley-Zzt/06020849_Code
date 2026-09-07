@@ -9,7 +9,7 @@ This project presents an AI pipeline for automated gastric cancer risk stratific
 - Maps extracted features to guideline‑based management recommendations via a **deterministic decision tree**.
 - Provides **traceable outputs** with explicit MAPS III reference numbers (e.g., REC.31) and warnings.
 
-All training and evaluation were performed on a **synthetically generated corpus (V5)** that adheres to MAPS III reporting standards. The pipeline is **open‑source** and designed for local, privacy‑preserving deployment.
+All training and evaluation were performed on a **synthetically generated corpus (V5)** that adheres to MAPS III reporting standards.
 
 ---
 ## Repository Structure
